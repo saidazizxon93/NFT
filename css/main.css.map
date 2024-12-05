@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "AMAA,AAAA,UAAU,CAAA;EACN,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;CACtB",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/_fonts.scss",
+        "../scss/_generel.scss",
+        "../scss/_mixin.scss",
+        "../scss/_varebles.scss",
+        "../scss/block/_blocks.scss",
+        "../scss/block/_container.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
