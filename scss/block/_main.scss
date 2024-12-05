@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+
+    background-color: #2B2B2B;
+}
+
+.main__out {}
+
+.main__inner {}
+
+.main__top {}
+
+.main__top-h2 {
+    color: white;
+    font-family: Work Sans;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 45.6px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__top-text {
+    color: white;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35.2px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__inner__menu {
+    list-style: none;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main__inner__menu-list {}
+
+.main__menu__list_photo {}
+
+.main__menu__list-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-top: 15px;
+}
+
+.main__menu__list-menu__list {}
+
+.main_menu_list-menu_list-img {}
+
+.main_menu__list-bottom {}
+
+.main_menu__list-bottom__h3 {
+    color: #fff;
+    padding-bottom: 10px;
+    width: 330px;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.main_menu__list-bottom-span {
+    color: #fff;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    position: relative;
+    width: 330px;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.main_menu__list-bottom-span::before {
+    content: "";
+    background-image: url(/images/kochatulki.png);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -30px;
+    
+}
+
+
+@media only screen and (max-width:1528px) {
+
+    .li3 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:716px) {
+    .li2 {
+        display: none;
+    }
+
+    .main__top-h2 {
+        width: 415px;
+        height: 40px;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .main__top-text {
+        width: 415px;
+        height: 39px;
+        padding-top: 20px;
+        text-align: center;
+    }
+}
