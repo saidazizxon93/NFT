@@ -144,4 +144,12 @@ a {
     padding-top: 20px;
     text-align: center;
   }
+  .main__menu__list_photo {
+    width: 315px;
+    height: 315px;
+  }
+  .main_menu_list-menu_list-img {
+    width: 95px;
+    height: 95px;
+  }
 }/*# sourceMappingURL=main.css.map */
