@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="Icon" href="./images/Storefront.svg">
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <!-- header -->
 
@@ -21,9 +23,9 @@
 
 
 
-     <!-- header -->
+    <!-- header -->
 
-     <main>
+    <main>
         <!-- section-1 -->
 
 
@@ -45,8 +47,8 @@
 
 
 
-         <!-- section-1 -->
-           <!-- section-2 -->
+        <!-- section-1 -->
+        <!-- section-2 -->
 
 
 
@@ -66,10 +68,9 @@
 
 
 
-        
-         <!-- section-2 -->
-           <!-- section-3 -->
 
+        <!-- section-2 -->
+        <!-- section-3 -->
 
 
 
@@ -88,11 +89,10 @@
 
 
 
-        
-         <!-- section-3 -->
-           <!-- section-4 -->
 
 
+        <!-- section-3 -->
+        <!-- section-4 -->
 
 
 
@@ -110,31 +110,94 @@
 
 
 
-        
-         <!-- section-4 -->
-           <!-- section-5 -->
 
 
 
+        <!-- section-4 -->
+        <!-- section-5 -->
 
+        <section class="magic">
+            <div class="container">
+                <div class="out-inner">
+                    <div class="magic__inner">
+                        <div class="out">
+                            <div class="right">
 
+                                <button class="magic__btn">
+                                    <span class="avatar">Shroomie</span>
+                                </button>
 
 
+                                <h1 class="magic__title">Magic Mashrooms</h1>
 
 
+                                <button class="magic__NFT-btn">See NFT</button>
 
+                            </div>
+                            <div class="left">
+                                <div class="timer">
+                                    <h1 class="timer__title">Auction ends in:</h1>
+                                    <div class="time">
+                                        <div class="unit">
+                                            <span id="hours">59 :</span>
+                                            <span class="label">Hours</span>
 
+                                        </div>
+                                        <div class="unit">
+                                            <span id="minutes">59 :</span>
+                                            <span class="label">Minutes</span>
+                                        </div>
 
+                                        <div class="unit">
+                                            <span id="seconds">59 </span>
+                                            <span class="label-2">Seconds</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <script>
+        let hours = 59;
+        let minutes = 59;
+        let seconds = 59;
 
+        function updateTimer() {
+            if (seconds === 0) {
+                if (minutes === 0) {
+                    if (hours === 0) {
+                        clearInterval(timerInterval);
+                        alert("Auction has ended!");
+                        return;
+                    } else {
+                        hours--;
+                        minutes = 59;
+                    }
+                } else {
+                    minutes--;
+                }
+                seconds = 59;
+            } else {
+                seconds--;
+            }
 
 
+            document.getElementById("hours").textContent = hours.toString().padStart(2, "0") + " :";
+            document.getElementById("minutes").textContent = minutes.toString().padStart(2, "0") + " :";
+            document.getElementById("seconds").textContent = seconds.toString().padStart(2, "0");
+        }
 
+        const timerInterval = setInterval(updateTimer, 1000);
+    </script>
 
+    <!-- section-5 -->
+    <!-- section-6 -->
 
-        
-         <!-- section-5 -->
-           <!-- section-6 -->
 
 
 
@@ -154,9 +217,8 @@
 
 
 
-        
-         <!-- section-6 -->
-           <!-- section-7 -->
+    <!-- section-6 -->
+    <!-- section-7 -->
 
 
 
@@ -176,10 +238,9 @@
 
 
 
-        
-         <!-- section-7 -->
-           <!-- section-8 -->
 
+    <!-- section-7 -->
+    <!-- section-8 -->
 
 
 
@@ -198,14 +259,13 @@
 
 
 
-        
-         <!-- section-8 -->
-     </main>
 
 
-     <!-- footer -->
+    <!-- section-8 -->
+    </main>
 
 
+    <!-- footer -->
 
 
 
@@ -219,7 +279,10 @@
 
 
 
-     
-      <!-- footer -->
+
+
+
+    <!-- footer -->
 </body>
+
 </html>

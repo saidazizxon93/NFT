@@ -1,0 +1,166 @@
+.magic {
+    background-image: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #A259FF 100%), url(../../images/Mashrooms.png);
+    background-size: cover;
+    background-position: center;    
+    padding: 40px 20px;
+    min-height: calc(120vh - 60px);
+    background-repeat: no-repeat;
+}
+
+.magic__inner {
+    text-align: center;
+    padding-top: 420px;
+}
+
+.out-inner {
+}
+
+.out {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.right {
+    text-align: left;
+}
+
+.left {
+    margin-top: 100px;
+}
+
+.magic__btn {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #3B3B3B;
+    color: #fff;
+    font-size: 1rem;
+    position: relative;
+    display: inline-flex;
+    gap: 10px;
+    cursor: pointer;
+    width: 151px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.magic__btn:hover {
+    transform: scale(1.1);
+    background-color: #5A5A5A;
+}
+
+.avatar {
+    margin-left: 30px;
+}
+
+.magic__btn::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../images/Avatar\ \(2\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    left: 15px;  
+    top: 12px;
+}
+
+
+
+.magic__title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 51px;
+    margin-bottom: 50px;
+}
+
+.magic__NFT-btn {
+    background-color: #fff;
+    padding: 19px 50px 19px 82px;
+    border-radius: 20px;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    position: relative;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.magic__NFT-btn:hover {
+    transform: scale(1.1);
+    background-color: #ddd;
+}
+
+.magic__NFT-btn::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../images/Eye.png);
+  width: 25px;
+  height: 25px; 
+  left: 45px;
+  top: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left {}
+
+.timer {
+    background: rgba(59, 59, 59, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 30px 50px;
+    border-radius: 20px;
+    font-size: 22px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.timer__title {
+    color: #fff;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.unit {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+    font-family: "Space Mono", monospace;
+    color: #fff;
+    font-size: 38px;
+}
+
+.label {
+    font-size: 15px;
+    margin-right: 28px;
+}
+
+
+.label-2 {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
