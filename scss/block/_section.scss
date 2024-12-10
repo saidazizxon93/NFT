@@ -1,23 +1,22 @@
 .section {
     padding: 80px 0px;
-    gap: 30px;
     opacity: 0px;
-    background: #2B2B2B;
+    background: $bcg-color;
     }
     
     .section__title {
-    font-family: Work Sans;
+ 
     font-size: 67px;
     font-weight: 600;
     line-height: 73.7px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: #FFFFFF;
+    color: $text-color;
     }
     
     .section__text {
-    font-family: Work Sans;
+   
     font-size: 22px;
     font-weight: 400;
     line-height: 35.2px;
@@ -25,18 +24,17 @@
     padding: 20px 0px;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: #FFFFFF;
+    color: $text-color;
     }
     
     .section__btn {
-        width: 224px;
-        height: 60px;
-        padding: 0px 50px;
+
+        padding: 20px 50px;
         margin: 25px 0px;
         gap: 12px;
         border-radius: 20px;
         opacity: 1; /* Opacity ni 0px emas, 1 qilib qo'yamiz */
-        background: #A259FF;
+        background-color: $general-color;
         color: white;
         font-family: 'Work Sans', sans-serif;
         font-size: 16px;
@@ -47,17 +45,17 @@
         text-decoration-skip-ink: none;
         align-items: center;
         display: flex;
-        border:#A259FF solid 2px;
+        border:$general-color solid 2px;
         justify-content: center; /* Textni markazlash */
         transition: all 0.3s ease-in-out; /* Smooth hover animatsiyasi */
     }
     
     /* Hover effekti */
     .section__btn:hover {
-        background: #922FFF; /* Tugmani fon rangini o'zgartiramiz */
+        background-color: $hover-color; /* Tugmani fon rangini o'zgartiramiz */
         transform: scale(1.1); /* Tugmani biroz kattalashtiramiz */
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Soyani qo'shamiz */
-        color: #fff; /* Matn rangini saqlaymiz */
+        color: $text-color; /* Matn rangini saqlaymiz */
     }
     
     
@@ -97,10 +95,10 @@
     
     }
     
-    .section__box {
+    .section__box { 
         display: flex;
-        gap: 150px;
-        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
     }
     
     .section__image {
