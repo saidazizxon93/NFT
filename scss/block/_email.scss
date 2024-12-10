@@ -1,0 +1,219 @@
+
+
+.mail {
+    background-color: #2B2B2B;
+}
+
+
+
+.mail__out {}
+
+.mail__inner {
+}
+
+.mail__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 60px 0;
+    background-color: #3B3B3B;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mail__boz-img {}
+
+.mail__box-email {}
+
+.mail__box-email__h2 {
+    width: 325px;
+    height: 92px;
+    font-family: Work Sans;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 45.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+}
+
+.mail__box-email-text {
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+    width: 425px;
+    height: 70px;
+}
+
+.mail__box-email2 {
+    margin-top: 30px;
+    background-color: white;
+    width: 375px;
+    height: 60px;
+    padding: 16px 0px 16px 20px;
+    gap: 12px;
+    border-radius: 20px;
+    opacity: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mail__box-email2__input {
+    border: none;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 182px;
+}
+
+.btn {
+    background-color: #A259FF;
+    padding: 19px 50px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    position: relative;
+    width: 221px;
+    display: flex;
+    align-items: center;
+
+}
+
+.btn::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url(./images/EnvelopeSimple.png);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 20px;
+}
+
+
+@media only screen and (max-width:1273px) {
+
+    .mail__inner {
+        width: 934px;
+    }
+
+    .mail__boz-img {
+        width: 300px;
+        height: 280px;
+    }
+
+    .mail__box-email {
+        width: 350px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mail__box-email__h2 {
+        font-family: Work Sans;
+        height: 50px;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 39.2px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .mail__box-email-text {
+        width: 350px;
+        height: 44px;
+        font-family: Work Sans;
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 0;
+        line-height: 22.4px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .mail__box-email2 {
+        flex-direction: column;
+        background: none;
+    }
+
+    .mail__box-email2__input {
+        width: 350px;
+        height: 46px;
+        padding: 12px 20px;
+        border-radius: 20px;
+    }
+
+    .btn {
+        width: 350px;
+        height: 46px;
+        padding: 12px 20px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width:958px) {
+
+    .mail__boz-img {
+        width: 315px;
+        height: 255px;
+    }
+
+    .mail__box {
+        background: none;
+        flex-direction: column;
+        width: 315px;
+        align-items: center;
+    }
+
+    .mail__box-email__h2 {
+        font-family: Work Sans;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 39.2px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .mail__box-email-text {
+        font-family: Work Sans;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 35.2px;
+        width: 315px;
+        height: 44px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    body{
+        overflow: hidden;
+    }
+    .mail__box-email2{
+        margin-top: 60px;
+    }
+}
