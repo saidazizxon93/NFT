@@ -1,6 +1,4 @@
 .section {
-    max-width: 1280px;
-    height: 1000px;
     padding: 80px 0px;
     gap: 30px;
     opacity: 0px;
@@ -212,13 +210,15 @@ opacity: 0px;
         .section__item{
             display: none;
         }
-        .section__menu{
-            display: ;
-            gap: 0;
-            display: ;
+        .section__letter-title {
+            font-size: 10px;
         }
-        .section__item {
-            display: flex;
+        .section__menu{
+            display: block;
+            gap: 0;
+            display: block;
+        }
+        .section__item {    
         }
         .secbtn{
             display: block;
