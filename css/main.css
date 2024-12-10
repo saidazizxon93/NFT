@@ -322,6 +322,7 @@ a {
     flex-direction: column;
     width: 315px;
     align-items: center;
+    padding-left: 60px;
   }
   .mail__box-email__h2 {
     font-family: Work Sans;
