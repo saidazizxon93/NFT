@@ -25,6 +25,9 @@
     text-decoration-skip-ink: none;
     color: $text-color; 
 }
+.works__item-img{
+    max-width: 100%
+}
 .works__list {
     @include d-flex(space-between, 0px);
     margin-top: 48px;

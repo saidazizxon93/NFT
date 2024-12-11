@@ -43,11 +43,11 @@
 
 .main__inner__menu {
     list-style: none;
-    padding-top: 30px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 90px;
 }
 
 .main__inner__menu-list {}
@@ -56,9 +56,10 @@
 
 .main__menu__list-menu {
     display: flex;
+    align-items: center;
     gap: 20px;
     list-style: none;
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 .main__menu__list-menu__list {}
@@ -68,33 +69,25 @@
 .main_menu__list-bottom {}
 
 .main_menu__list-bottom__h3 {
-    color: #fff;
-    padding-bottom: 10px;
-    width: 330px;
-    font-family: Work Sans;
+    color: $text-color;
+    margin-bottom: 10px;
     font-size: 22px;
     font-weight: 600;
     line-height: 30.8px;
-    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
 }
 
 .main_menu__list-bottom-span {
-    color: #fff;
-    font-family: Work Sans;
+    color: $text-color;
     font-size: 16px;
     font-weight: 400;
     line-height: 22.4px;
-    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     position: relative;
-    width: 330px;
     margin-left: 25px;
-    display: flex;
-    align-items: center;
 }
 
 
@@ -111,38 +104,37 @@
 
 
 
-@media only screen and (max-width: 1132px){
-    .l3{
+// @media only screen and (max-width: 1132px){
+//     .l3{
+//         display: none;
+//     }
+// }
+@media only screen and (max-width: 1242px){
+    .main__inner__menu-list:nth-child(3){
         display: none;
     }
 }
-@media only screen and (max-width:716px) {
+@media only screen and (max-width:828px) {
     .li2 {
         display: none;
     }
 
     .main__top-h2 {
         width: 415px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
     }
 
     .main__top-text {
-        width: 415px;
-        height: 39px;
         padding-top: 20px;
-        text-align: center;
     }
 
     .main__menu__list_photo {
-        width: 315px;
-        height: 315px;
+        max-width: 100%;
     }
 
     .main_menu_list-menu_list-img {
-        width: 95px;
-        height: 95px;
+    
     }
 }

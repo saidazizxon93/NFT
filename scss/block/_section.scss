@@ -1,11 +1,11 @@
 .section {
-    padding: 80px 0px;
-    opacity: 0px;
     background: $bcg-color;
-    }
-    
-    .section__title {
- 
+}
+.section__wrapper{
+    @include d-flex(space-between, 0);
+    padding: 80px 0px;
+}
+.section__title {
     font-size: 67px;
     font-weight: 600;
     line-height: 73.7px;
@@ -20,7 +20,6 @@
     font-size: 22px;
     font-weight: 400;
     line-height: 35.2px;
-    text-align: left;
     padding: 20px 0px;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -28,28 +27,31 @@
     }
     
     .section__btn {
-
+        position: relative;
         padding: 20px 50px;
-        margin: 25px 0px;
-        gap: 12px;
+        margin-bottom: 20px;
         border-radius: 20px;
-        opacity: 1; /* Opacity ni 0px emas, 1 qilib qo'yamiz */
         background-color: $general-color;
-        color: white;
+        color: $text-color;
         font-family: 'Work Sans', sans-serif;
         font-size: 16px;
         font-weight: 600;
         line-height: 22.4px;
-        text-align: center;
+        border: none;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
-        align-items: center;
-        display: flex;
-        border:$general-color solid 2px;
-        justify-content: center; /* Textni markazlash */
         transition: all 0.3s ease-in-out; /* Smooth hover animatsiyasi */
     }
-    
+    .section__btn::before{
+        content:  "";
+        position: absolute;
+        background-image: url("/images/RocketLaunch.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        left: 20px;
+    }
     /* Hover effekti */
     .section__btn:hover {
         background-color: $hover-color; /* Tugmani fon rangini o'zgartiramiz */
@@ -58,22 +60,23 @@
         color: $text-color; /* Matn rangini saqlaymiz */
     }
     
-    
+    // .section__middle{
+    //     width: 408px;
+    // }
     .section__menu {
-        display: flex;
-        list-style: none;
-        gap: 32px;
+        @include d-flex(start, 32px);
+        
         
     }
     
     .section__item {
         //styleName: H4 - Space Mono;
     
-    color: #FFFFFF;
+    color: $text-color;
     }
     
     .section__link-title {
-  
+     
     font-family: Space Mono;
     font-size: 28px;
     font-weight: 700;
@@ -83,9 +86,10 @@
     text-decoration-skip-ink: none;
     
     }
-    
+    .section__middle{
+        padding-right: 0;
+    }
     .section__link {
-        font-family: Work Sans;
     font-size: 23.99px;
     font-weight: 400;
     line-height: 38.38px;
@@ -96,49 +100,53 @@
     }
     
     .section__box { 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
     
     .section__image {
-        background-image: url("../..");
-        background-repeat: no-repeat;
-        background-size: contain;
+
+        max-width: 100%;
     }
     
     .section__latter {
-        width: 510px;
-    height: 109px;
-    padding: 20px 0px 0px 0px;
-    gap: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
     border-radius: 0px 0px 20px 20px;
-    opacity: 0px;
-    background: #3B3B3B;
+    background: $general2-color;
     }
     
     .section__latter-title {
-    font-family: Work Sans;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 30.8px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #FFFFFF;
-    padding: 0px 20px;
+        max-width: 200px;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 30.8px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: $text-color;
     }
     
     .section__latter-text {
-    font-family: Work Sans;
+        max-width: 250px;
+        margin-top: 10px;
     font-size: 16px;
     font-weight: 400;
     line-height: 22.4px;
-    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: white;
-    
+    color: $text-color;
+    padding-left: 36px;
+    position: relative;
+    }
+    .section__latter-text::before{
+        content: "";
+        position: absolute;
+        background-image: url("/images/Avatar\ \(9\).png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        left: 2px;
+        top: -2px;
     }
     .secbtn{
         display: none;
@@ -149,16 +157,20 @@
     .secitem{
         display: none;
     }
-    .section__last-box {
-        display: flex;
-        gap: 12px;
-        padding: 15px;
-    }
-    
-    @media only screen and (max-width:768px) {
+   
+
+    @media only screen and (max-width: 978px) {
+        .section__wrapper{
+            @include d-flex(space-between, 0);
+        }
+        .section__latter{
+            max-width: 408px;
+        }
+        // .section__middle{
+        //     margin-right: -100px;
+        // }
         .section__title {
             //styleName: H3 - Work Sans;
-font-family: Work Sans;
 font-size: 38px;
 font-weight: 600;
 line-height: 45.6px;
@@ -168,59 +180,74 @@ text-decoration-skip-ink: none;
 
         }
         .section__menu {
-            font-size: 20px;
         }
         .section__box {
             gap: 30px;
         }
-        .section__text {
-            font-size: 16px;
-            padding: 15px 0px;
+        .section__image{
+            max-width: 80%;
         }
         .section__image {
-            width: 330px;
-height: 221px;
-gap: 0px;
-border-radius: 20px 20px 0px 0px;
-opacity: 0px;
         }
         .section__latter {
-            width: 330px;
-            height: 109px;
         }
         .section__btn {
         }
         .section {
-            height: 560px;
-            overflow-y: hidden;
+        }
+    }
+    @media only screen and (max-width: 918px){
+
+        // .section__btn{
+        //     display: none;
+        // }
+        // .section__item{
+        //     display: none;
+        // }
+        // .secbtn{
+        //     display: block;
+        // }
+        // .seclist{
+        //     display: block;
+        // }
+        // .secitem{
+        //     display: block;
+        // }
+        
+        // .section__menu{
+        //     display: block;
+        //     gap: 0;
+        // }
+    }
+    @media only screen and (max-width: 828px){
+            .secitem{
+                display: none;
+
+            }
+            .secbtn{
+                display: none;
+
+            }
+            .seclist{
+                display: none;
+
+            }
+            .se
+    }
+    @media only screen and (max-width: 733px){
+        .section__latter{
+            max-width: 345px;
         }
     }
     @media only screen and (max-width:390px) {
         .section {
-            height: 980px;
-        }
-        .section__box {
-            flex-wrap: wrap;
-        }
-        .section__btn{
-            display: none;
-        }
-        .section__item{
-            display: none;
         }
         .section__menu{
             gap: 0;
         }
-        .section__item {
-            display: flex;
+        .section__letter-title {
+            font-size: 10px;
         }
-        .secbtn{
-            display: block;
-        }
-        .seclist{
-            display: block;
-        }
-        .secitem{
-            display: block;
+        .section__item {    
         }
     }
