@@ -826,9 +826,6 @@ a {
     margin-left: auto;
     margin-right: auto;
   }
-  .discover__item {
-    width: 385px;
-  }
   .discover__item:nth-child(3) {
     display: block;
   }
