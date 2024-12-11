@@ -1,7 +1,7 @@
 
 
 .mail {
-    background-color: #2B2B2B;
+    background-color: $bcg-color;
 }
 
 
@@ -29,34 +29,30 @@
 .mail__box-email {}
 
 .mail__box-email__h2 {
-    width: 325px;
-    height: 92px;
-    font-family: Work Sans;
+
     font-size: 38px;
     font-weight: 600;
     line-height: 45.6px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: white;
+    color: $text-color;
 }
 
 .mail__box-email-text {
-    font-family: Work Sans;
     font-size: 22px;
     font-weight: 400;
     line-height: 35.2px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: white;
-    width: 425px;
-    height: 70px;
+    color: $text-color;
+
 }
 
 .mail__box-email2 {
     margin-top: 30px;
-    background-color: white;
+    background-color: $text-color;
     width: 375px;
     height: 60px;
     padding: 16px 0px 16px 20px;
@@ -70,7 +66,6 @@
 
 .mail__box-email2__input {
     border: none;
-    font-family: Work Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 22.4px;
@@ -81,12 +76,11 @@
 }
 
 .btn {
-    background-color: #A259FF;
+    background-color: $general-color;
     padding: 19px 50px;
     border-radius: 20px;
-    color: white;
+    color: $text-color;
     border: none;
-    font-family: Work Sans;
     font-size: 16px;
     font-weight: 600;
     line-height: 22.4px;
@@ -130,8 +124,6 @@
     }
 
     .mail__box-email__h2 {
-        font-family: Work Sans;
-        height: 50px;
         font-size: 28px;
         font-weight: 600;
         line-height: 39.2px;
@@ -141,9 +133,6 @@
     }
 
     .mail__box-email-text {
-        width: 350px;
-        height: 44px;
-        font-family: Work Sans;
         font-size: 16px;
         font-weight: 400;
         padding-top: 0;
@@ -157,7 +146,7 @@
         flex-direction: column;
         background: none;
         margin-top: 30px;
-        background-color: white;
+        background-color: $text-color;
         width: 375px;
         height: 60px;
         padding: 16px 0px 16px 20px;
@@ -175,7 +164,6 @@
         padding: 12px 20px;
         border-radius: 20px;
         border: none;
-    font-family: Work Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 22.4px;
@@ -191,12 +179,11 @@
         padding: 12px 20px;
         border-radius: 20px;
         text-align: center;
-        background-color: #A259FF;
+        background-color: $general-color;
         padding: 19px 50px;
         border-radius: 20px;
-        color: white;
+        color: $text-color;
         border: none;
-        font-family: Work Sans;
         font-size: 16px;
         font-weight: 600;
         line-height: 22.4px;
@@ -248,9 +235,7 @@
         text-decoration-skip-ink: none;
     }
 
-    body{
-        overflow: hidden;
-    }
+
     .mail__box-email2{
         margin-top: 60px;
     }

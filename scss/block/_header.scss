@@ -25,7 +25,7 @@
     color: $text-color;
 }
 .header__item-link:hover{
-    border-bottom: 1px solid #A259FF;
+    border-bottom: 1px solid $general-color;
     padding-bottom: 10px;
 }
 .header__link {
